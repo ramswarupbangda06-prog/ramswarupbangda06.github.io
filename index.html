@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bangda Fashion Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #111;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff9800;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd53') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .price {
+            color: green;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .btn {
+            background-color: #ff9800;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #e68900;
+        }
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Bangda Fashion Store</h2>
+    <p>Owner: Ramswarup Bangda</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Latest Trendy Clothes</h1>
+    <p>Best Quality | Best Price</p>
+</section>
+
+<section class="container" id="products">
+    <h2 style="text-align:center;">Our Products</h2>
+    
+    <div class="products">
+        
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="T-Shirt">
+            <h3>Casual T-Shirt</h3>
+            <p class="price">₹499</p>
+            <button class="btn">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b" alt="Jeans">
+            <h3>Blue Denim Jeans</h3>
+            <p class="price">₹999</p>
+            <button class="btn">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Jacket">
+            <h3>Winter Jacket</h3>
+            <p class="price">₹1499</p>
+            <button class="btn">Buy Now</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="container" id="contact">
+    <h2 style="text-align:center;">Contact Us</h2>
+    <p style="text-align:center;">
+        📞 Phone: +91 9876543210 <br>
+        📧 Email: bangdafashion@gmail.com
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Bangda Fashion Store | Designed by Ramswarup Bangda</p>
+</footer>
+
+</body>
+</html>
