@@ -1,172 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>Bangda Fashion Store</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Ramswarup | Creative Lab</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #111;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #333;
-            text-align: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #ff9800;
-        }
-
-        .hero {
-            background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd53') no-repeat center center/cover;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        .hero h1 {
-            font-size: 32px;
-        }
-
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        .card img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 6px;
-        }
-
-        .price {
-            color: green;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .btn {
-            background-color: #ff9800;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-
-        .btn:hover {
-            background-color: #e68900;
-        }
-
-        footer {
-            background-color: #111;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 30px;
-        }
-
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 24px;
-            }
-        }
+        body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #0f172a; color: #f8fafc; overflow-x: hidden; }
+        header { height: 75vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, #1e293b, #0f172a); text-align: center; border-bottom: 4px solid #38bdf8; }
+        .profile-pic { width: 180px; height: 180px; border-radius: 50%; border: 4px solid #38bdf8; margin-bottom: 25px; object-fit: cover; box-shadow: 0 0 30px rgba(56, 189, 248, 0.4); }
+        .lab-title { font-size: 2.8rem; margin: 0; color: #f8fafc; font-weight: bold; }
+        .lab-subtitle { color: #38bdf8; letter-spacing: 2px; text-transform: uppercase; margin-top: 10px; font-weight: 600; }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; padding: 40px 20px; max-width: 1200px; margin: -80px auto 0; }
+        .card { background: #1e293b; border-radius: 20px; padding: 30px; border: 1px solid #334155; text-align: center; transition: 0.4s; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .card:hover { transform: translateY(-15px); border-color: #38bdf8; }
+        .icon { font-size: 3.5rem; margin-bottom: 15px; display: block; }
+        h2 { color: #38bdf8; margin-bottom: 15px; }
+        p { color: #94a3b8; line-height: 1.6; }
+        .btn { display: inline-block; margin-top: 15px; padding: 12px 30px; background: #38bdf8; color: #0f172a; text-decoration: none; border-radius: 30px; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #f8fafc; transform: scale(1.05); }
+        footer { text-align: center; padding: 50px; color: #64748b; font-size: 0.9rem; }
     </style>
 </head>
-
 <body>
 
 <header>
-    <h2>Bangda Fashion Store</h2>
-    <p>Owner: Ramswarup Bangda</p>
+    <img src="1776071989097.png" alt="Ramswarup Bangda" class="profile-pic">
+    <h1 class="lab-title">Ramswarup Bangda</h1>
+    <div class="lab-subtitle">AI Artist | Chess Strategist | Storyteller</div>
 </header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section class="hero">
-    <h1>Latest Trendy Clothes</h1>
-    <p>Best Quality | Best Price</p>
-</section>
-
-<section class="container" id="products">
-    <h2 style="text-align:center;">Our Products</h2>
-    
-    <div class="products">
-        
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="T-Shirt">
-            <h3>Casual T-Shirt</h3>
-            <p class="price">₹499</p>
-            <button class="btn">Buy Now</button>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b" alt="Jeans">
-            <h3>Blue Denim Jeans</h3>
-            <p class="price">₹999</p>
-            <button class="btn">Buy Now</button>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Jacket">
-            <h3>Winter Jacket</h3>
-            <p class="price">₹1499</p>
-            <button class="btn">Buy Now</button>
-        </div>
-
+<div class="grid-container">
+    <div class="card">
+        <span class="icon">🖼️</span>
+        <h2>AI Art Gallery</h2>
+        <p>Traditional aesthetics aur AI ka milan. Yahan meri Rajputi aur Cultural image generation ka hunar dikhega.</p>
+        <a href="#" class="btn">Explore Art</a>
     </div>
-</section>
 
-<section class="container" id="contact">
-    <h2 style="text-align:center;">Contact Us</h2>
-    <p style="text-align:center;">
-        📞 Phone: +91 9256530157 <br>
-        📧 Email: bangdafashion@gmail.com
-    </p>
-</section>
+    <div class="card">
+        <span class="icon">♟️</span>
+        <h2>Chess Hub</h2>
+        <p>Strategies, puzzles aur mere favorite games. Har chaal mein ek naya sabaq aur Grandmaster mindset.</p>
+        <a href="https://lichess.org" class="btn" target="_blank">Play Chess</a>
+    </div>
+
+    <div class="card">
+        <span class="icon">📽️</span>
+        <h2>Storytelling</h2>
+        <p>Hindi animation stories aur village classroom scenarios ka home ground. Kuch naya dekhein aur seekhein.</p>
+        <a href="#" class="btn">Watch Stories</a>
+    </div>
+</div>
 
 <footer>
-    <p>© 2026 Bangda Fashion Store | Designed by Ramswarup Bangda</p>
+    <p>© 2026 Crafted with ❤️ by Ramswarup Bangda</p>
 </footer>
 
 </body>
